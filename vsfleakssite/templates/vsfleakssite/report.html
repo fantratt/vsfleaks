@@ -1,0 +1,12 @@
+{% extends 'vsfleakssite/base.html' %}
+
+{% load i18n %}
+{% block content %}
+	<form id="report_form" 
+			method="post" 
+			action="{% url 'vsfleaks:report' %}"/> 
+		{% csrf_token %}    
+		{{ report_form.as_ul }}
+		<input type="submit" id="_form_type_{{ report_form.data.type_id }}" value="{% trans "Send" %}">
+	</form>
+{% endblock %}

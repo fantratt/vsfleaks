@@ -1,0 +1,48 @@
+{% extends 'vsfleakssite/base.html' %}
+
+{% load i18n %}
+{% load taggit_extras %}
+
+{% block title %} {% trans 'Archive' %} {% endblock %} 
+
+{% block content %}
+    <h1> {% trans 'The archive' %} </h1>
+    {% for post in posts %}
+    <div class="post">
+        <h2>
+            <a href="{{post.get_absolute_url}}">
+                {{post.title}}
+            </a>
+        </h2>
+        <p>{{post.description}}</p>
+        <p>
+            {% trans 'Posted on' %}
+            <time datetime="{{post.created|date:"c"}}">
+            {{post.created|date}}
+            </time>
+        </p>
+        <p> 
+        	{% trans 'tags' %}
+        	{% for tag in post.tags.all %}
+        		<a href="{% url 'vsfleaks:index' tag.name %}"> {{ tag.name }} </a>
+        	{% endfor %}
+        </p>
+    </div>
+    {% endfor %}
+	    
+	<div class="pagination">
+	    <span class="step-links">
+	        {% if posts.has_previous %}
+	            <a href="?page={{ posts.previous_page_number }}">{% trans 'newer' %}</a>
+	        {% endif %}
+	
+	        <span class="current">
+	            Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+	        </span>
+	
+	        {% if posts.has_next %}
+	            <a href="?page={{ posts.next_page_number }}">{% trans 'older' %}</a>
+	        {% endif %}
+	    </span>
+	</div>
+{% endblock %}

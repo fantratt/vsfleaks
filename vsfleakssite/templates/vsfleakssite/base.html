@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+{% load i18n %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'vsfleakssite/css/reset.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'mapsvsfleakssiteite/css/style.css' %}" />
+
+<head>
+    <title>{% block title %}Hejhej{% endblock %}</title>
+    <script type="text/javascript" src="{% static 'mapsite/js/jquery-1.11.1.min.js' %}"></script>
+</head>
+
+<body>
+	<div id="top-wrapper" class="top">
+		{% block top %}
+			<div id="top-nav" class="top-nav">
+				<a href="{% url 'vsfleaks:index' %}"> {% trans 'home' %} </a>
+				<a href="{% url 'vsfleaks:post' 'about' %}"> {% trans 'about' %} </a>
+				<a href="{% url 'vsfleaks:report' %}"> {% trans 'report' %} </a>
+			</div>
+		{% endblock %}
+	</div>
+	<div id="main-wrapper" class="main">
+    	{% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>

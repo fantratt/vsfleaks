@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-10-06 17:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\vsfleakssite\forms.py:8
+msgid "email"
+msgstr ""
+
+#: .\vsfleakssite\forms.py:9
+msgid "password"
+msgstr "lösenord"
+
+#: .\vsfleakssite\forms.py:24
+msgid ""
+"Phone number must be entered in the format: '+999999999'. Up to 15 digits "
+"allowed."
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\base.html:18
+msgid "home"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\base.html:19
+msgid "about"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\base.html:20
+msgid "report"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\index.html:6
+msgid "Archive"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\index.html:9
+msgid "The archive"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\index.html:19
+msgid "Posted on"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\index.html:35
+msgid "newer"
+msgstr "Nyare"
+
+#: .\vsfleakssite\templates\vsfleakssite\index.html:43
+msgid "older"
+msgstr "Äldre"
+
+#: .\vsfleakssite\templates\vsfleakssite\report.html:10
+msgid "Send"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\result.html:6
+msgid "thank you"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\result.html:7
+msgid "back"
+msgstr ""

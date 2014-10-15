@@ -15,14 +15,18 @@
             </a>
         </h2>
         <p>{{post.description}}</p>
+        ---------------------------
+        <p>{{post.get_excerpt}}</p>
+        ---------------------------
         <p>
             {% trans 'Posted on' %}
             <time datetime="{{post.created|date:"c"}}">
             {{post.created|date}}
             </time>
         </p>
+        --------------------------
         <p> 
-        	{% trans 'tags' %}
+        	{% trans 'tags' %} : 
         	{% for tag in post.tags.all %}
         		<a href="{% url 'vsfleaks:index' tag.name %}"> {{ tag.name }} </a>
         	{% endfor %}

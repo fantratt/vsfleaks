@@ -32,4 +32,9 @@ class Post(models.Model):
     
     def get_absolute_url(self):
         return reverse('vsfleaks:post', args=[self.slug]) 
-        
+    
+    def get_excerpt(self):
+        if len(self.content) < 250:
+            return self.content
+        else:
+            return self.content[0:250] + "..."

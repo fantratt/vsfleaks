@@ -1,11 +1,36 @@
 {% extends "zinnia/base.html" %}
 {% load i18n %}
+{% load static %}
+{% block link %} <link rel="stylesheet" type="text/css" href="{% static 'vsfleakssite/css/tooltip.css' %}"></link> {% endblock %}
+{% block script %} <script type="text/javascript" src="{% static 'vsfleakssite/js/tooltip.js' %}"></script> {% endblock %}
 {% block content %}
 	<form id="report_form" 
 			method="post" 
 			action="{% url 'vsfleaks:report' %}"/> 
 		{% csrf_token %}    
+		<p>{% trans "The contact information is not required, you can be anonimous" %}</p>
 		{{ report_form.as_ul }}
 		<input type="submit" id="_form_type_{{ report_form.data.type_id }}" value="{% trans "Send" %}">
 	</form>
+	
+	<style>
+		.tooltip {
+			display:none;
+			position:absolute;
+			border:1px solid #333;
+			background-color:#161616;
+			border-radius:5px;
+			padding:10px;
+			color:#fff;
+			font-size:12px Arial;
+		}
+	</style>
+	
+	<script type="text/javascript">  
+	//add tooltip
+		$(document).ready(function() {
+			$('#id_file').addClass("masterTooltip");
+			$('#id_file').attr('title', '{% trans "to add more files either zip them or hold ctrl when selecting" %}');
+		});	
+	</script>
 {% endblock %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-06 17:42+0200\n"
+"POT-Creation-Date: 2014-10-15 21:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,15 +50,19 @@ msgstr ""
 msgid "The archive"
 msgstr ""
 
-#: .\vsfleakssite\templates\vsfleakssite\index.html:19
+#: .\vsfleakssite\templates\vsfleakssite\index.html:22
 msgid "Posted on"
 msgstr ""
 
-#: .\vsfleakssite\templates\vsfleakssite\index.html:35
+#: .\vsfleakssite\templates\vsfleakssite\index.html:29
+msgid "tags"
+msgstr ""
+
+#: .\vsfleakssite\templates\vsfleakssite\index.html:40
 msgid "newer"
 msgstr "Nyare"
 
-#: .\vsfleakssite\templates\vsfleakssite\index.html:43
+#: .\vsfleakssite\templates\vsfleakssite\index.html:48
 msgid "older"
 msgstr "Äldre"
 
@@ -72,4 +76,79 @@ msgstr ""
 
 #: .\vsfleakssite\templates\vsfleakssite\result.html:7
 msgid "back"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:16
+msgid "RSS Feed of latest entries"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:17
+msgid "RSS Feed of latest discussions"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:27
+msgid "Welcome!"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:29
+msgid "This simple theme is the default appearance of Zinnia."
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:34
+msgid "Categories"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:40
+msgid "Authors"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:45
+msgid "Calendar"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:50
+msgid "Tags"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:55
+msgid "Recent entries"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:59
+msgid "Recent comments"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:63
+msgid "Recent linkbacks"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:67
+msgid "Random entries"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:71
+msgid "Popular entries"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:75
+msgid "Archives"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:80
+msgid "Tools"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:84
+#: .\vsfleakssite\templates\zinnia\base.html:85
+msgid "Dashboard"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:91
+#: .\vsfleakssite\templates\zinnia\base.html:92
+msgid "Post an entry"
+msgstr ""
+
+#: .\vsfleakssite\templates\zinnia\base.html:99
+#: .\vsfleakssite\templates\zinnia\base.html:100
+msgid "Log out"
 msgstr ""

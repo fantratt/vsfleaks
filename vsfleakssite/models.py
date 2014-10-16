@@ -1,6 +1,5 @@
 from django.db import models
 from django.core.urlresolvers import reverse
-from taggit.managers import TaggableManager
 # Create your models here.
 
 class Report(models.Model):
@@ -13,28 +12,4 @@ class Report(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         return self.subject
-    
-class Post(models.Model):
-    report = models.ForeignKey('Report', null=True, blank=True)
-    title = models.CharField(max_length=255, blank=False)
-    slug = models.SlugField(unique=True, max_length = 255)
-    description = models.CharField(max_length = 255)
-    content = models.TextField(blank=False)
-    published = models.BooleanField(default=False)
-    created = models.DateTimeField(auto_now_add=True)
-    tags = TaggableManager()
-    
-    class Meta:
-        ordering = ['-created']
-        
-    def __str__(self):
-        return self.title
-    
-    def get_absolute_url(self):
-        return reverse('vsfleaks:post', args=[self.slug]) 
-    
-    def get_excerpt(self):
-        if len(self.content) < 250:
-            return self.content
-        else:
-            return self.content[0:250] + "..."
+

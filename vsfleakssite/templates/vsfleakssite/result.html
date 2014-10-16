@@ -1,8 +1,7 @@
-{% extends 'vsfleakssite/base.html' %}
- 
+{% extends "zinnia/base.html" %}
 {% load i18n %}
 
 {% block content %} 
 	{% trans "thank you" %}
-	<a href="{% url 'vsfleaks:index' %}"> {% trans "back" %} </a> 
+	<a href="{% url 'zinnia:entry_archive_index' %}"> {% trans "back" %} </a> 
 {% endblock %}

@@ -6,6 +6,7 @@
 {% block content %}
 	<form id="report_form" 
 			method="post" 
+			enctype="multipart/form-data"
 			action="{% url 'vsfleaks:report' %}"/> 
 		{% csrf_token %}    
 		<p>{% trans "The contact information is not required, you can be anonimous" %}</p>

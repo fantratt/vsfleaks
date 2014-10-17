@@ -13,7 +13,6 @@ def report(request):
     if request.method == 'POST':
         report_form = ReportForm(request.POST, request.FILES)
         if report_form.is_valid():
-            print('saving')
             report_form.save()
             return redirect('vsfleaks:result')
     else:
@@ -23,6 +22,4 @@ def report(request):
 def result(request):
     context = RequestContext(request)
     return render_to_response('vsfleakssite/result.html', {}, context)
-
-
     

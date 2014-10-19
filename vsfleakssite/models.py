@@ -6,7 +6,7 @@ from django.conf import settings
 class Report(models.Model):
     subject = models.CharField(max_length=225, blank=False)
     message = models.TextField(blank=False)
-    file = models.FileField(null=True, blank=True, upload_to='uploads/%Y/%m/%d')
+    file = models.FileField(null=True, blank=True, upload_to='uploads/%y%m%d%H%M/')
     name = models.CharField(max_length=225, blank=True)
     phone = models.CharField(max_length=15, blank=True)
     email = models.EmailField(blank=True)

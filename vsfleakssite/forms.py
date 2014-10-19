@@ -10,5 +10,4 @@ class ReportForm(forms.ModelForm):
                              required=False)
     class Meta:
         model = Report
-        fields = (_('subject'), _('message'), _('file'), _('name'), _('email'))
     

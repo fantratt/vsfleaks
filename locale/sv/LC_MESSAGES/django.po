@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-20 01:32+0200\n"
+"POT-Creation-Date: 2014-10-20 01:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,28 +38,125 @@ msgstr "Tillbaka"
 msgid "Send in your tips here!"
 msgstr "Skicka in dina tips här"
 
+#: .\templates\zinnia\base.html:26
+msgid "Welcome!"
+msgstr ""
+
+#: .\templates\zinnia\base.html:28
+msgid "This simple theme is the default appearance of Zinnia."
+msgstr ""
+
+#: .\templates\zinnia\base.html:33
+msgid "Categories"
+msgstr ""
+
+#: .\templates\zinnia\base.html:39
+msgid "Authors"
+msgstr ""
+
+#: .\templates\zinnia\base.html:44
+msgid "Calendar"
+msgstr ""
+
+#: .\templates\zinnia\base.html:49
+msgid "Tags"
+msgstr ""
+
+#: .\templates\zinnia\base.html:54
+msgid "Recent entries"
+msgstr ""
+
+#: .\templates\zinnia\base.html:58
+msgid "Recent linkbacks"
+msgstr ""
+
+#: .\templates\zinnia\base.html:62
+msgid "Archives"
+msgstr ""
+
+#: .\templates\zinnia\base.html:67
+msgid "Tools"
+msgstr ""
+
+#: .\templates\zinnia\base.html:71 .\templates\zinnia\base.html.py:72
+msgid "Dashboard"
+msgstr ""
+
+#: .\templates\zinnia\base.html:78 .\templates\zinnia\base.html.py:79
+msgid "Post an entry"
+msgstr ""
+
+#: .\templates\zinnia\base.html:86 .\templates\zinnia\base.html.py:87
+msgid "Log out"
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:12
+msgid "Just another Zinnia weblog."
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:32 .\templates\zinnia\skeleton.html:33
+#: .\templates\zinnia\skeleton.html:70 .\templates\zinnia\skeleton.html:71
+msgid "Sitemap"
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:37
+msgid "RSS Feed of latest entries"
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:38
+msgid "RSS Feed"
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:44
+msgid "Keywords..."
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:62
+msgid "Useful links"
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:65 .\templates\zinnia\skeleton.html:66
+msgid "Weblog index"
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:77
+msgid "Search"
+msgstr ""
+
+#: .\templates\zinnia\skeleton.html:87
+#, python-format
+msgid ""
+"Powered by <a href=\"http://www.djangoproject.com\">Django</a> and <a href="
+"\"https://github.com/Fantomas42/django-blog-zinnia\">Zinnia %(ZINNIA_VERSION)"
+"s</a>."
+msgstr ""
+
 #: .\vsfleakssite\forms.py:9
 msgid ""
 "Phone number must be entered in the format: '+999999999'. Up to 15 digits "
 "allowed."
 msgstr "Telefonnumret måste anges i formatet '+999999999' upp till 15 siffror "
 
-#: .\vsfleakssite\forms.py:13
+#: .\vsfleakssite\forms.py:13 .\vsfleakssite\models.py:8
 msgid "subject"
 msgstr "Ämne"
 
-#: .\vsfleakssite\forms.py:13
+#: .\vsfleakssite\forms.py:13 .\vsfleakssite\models.py:9
 msgid "message"
 msgstr "Meddelande"
 
-#: .\vsfleakssite\forms.py:13
+#: .\vsfleakssite\forms.py:13 .\vsfleakssite\models.py:10
 msgid "file"
 msgstr "Fil"
 
-#: .\vsfleakssite\forms.py:13
+#: .\vsfleakssite\forms.py:13 .\vsfleakssite\models.py:11
 msgid "name"
 msgstr "Namn"
 
-#: .\vsfleakssite\forms.py:13
+#: .\vsfleakssite\forms.py:13 .\vsfleakssite\models.py:13
 msgid "email"
 msgstr "Epost"
+
+#: .\vsfleakssite\models.py:12
+msgid "phone"
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-20 00:24+0200\n"
+"POT-Creation-Date: 2014-10-20 01:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,9 @@ msgstr ""
 
 #: .\templates\vsfleakssite\report.html:12
 msgid "The contact information is not required, you can be anonimous"
-msgstr "Kontaktinformationen är inte obligatorisk, men behövs om vi ska kunna kontakta dig för frågor."
+msgstr ""
+"Kontaktinformationen är inte obligatorisk, men behövs om vi ska kunna "
+"kontakta dig för frågor."
 
 #: .\templates\vsfleakssite\report.html:14
 msgid "Send"
@@ -36,9 +38,28 @@ msgstr "Tillbaka"
 msgid "Send in your tips here!"
 msgstr "Skicka in dina tips här"
 
-
 #: .\vsfleakssite\forms.py:9
 msgid ""
 "Phone number must be entered in the format: '+999999999'. Up to 15 digits "
 "allowed."
 msgstr "Telefonnumret måste anges i formatet '+999999999' upp till 15 siffror "
+
+#: .\vsfleakssite\forms.py:13
+msgid "subject"
+msgstr "Ämne"
+
+#: .\vsfleakssite\forms.py:13
+msgid "message"
+msgstr "Meddelande"
+
+#: .\vsfleakssite\forms.py:13
+msgid "file"
+msgstr "Fil"
+
+#: .\vsfleakssite\forms.py:13
+msgid "name"
+msgstr "Namn"
+
+#: .\vsfleakssite\forms.py:13
+msgid "email"
+msgstr "Epost"

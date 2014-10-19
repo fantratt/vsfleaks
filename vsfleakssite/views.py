@@ -2,10 +2,7 @@ from django.shortcuts import *
 from vsfleakssite.forms import *
 from django.template import RequestContext
 from vsfleakssite.models import *
-from django.http import HttpResponse, HttpResponseRedirect
-from django.views.decorators.csrf import csrf_exempt
-from django.core.urlresolvers import reverse
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
 # Create your views here.
 
 def report(request):
@@ -21,5 +18,5 @@ def report(request):
     
 def result(request):
     context = RequestContext(request)
-    return render_to_response('vsfleakssite/result.html', {}, context)
+    return render_to_response('vsfleakssite/result.html', context)
     

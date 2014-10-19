@@ -8,7 +8,6 @@ class ReportForm(forms.ModelForm):
     phone = forms.RegexField(regex=r'^\+?1?\d{9,15}$', 
                              error_message = _("Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed."),
                              required=False)
-    
     class Meta:
         model = Report
         fields = ('subject', 'message', 'file', 'name', 'email')

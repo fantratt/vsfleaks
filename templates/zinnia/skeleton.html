@@ -16,6 +16,7 @@
     <link rel="pingback" href="/xmlrpc/" />
     <link rel="shortcut icon" href="{% static "zinnia/img/favicon.ico" %}" />
     <link rel="home" href="{% url 'zinnia:entry_archive_index' %}" />
+    <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "vsfleakssite/css/reset.css" %}" />
     <link rel="stylesheet" type="text/css" media="screen, projection" href="{% static "zinnia/css/screen.css" %}" />
     <link rel="stylesheet" type="text/css" media="print" href="{% static "zinnia/css/print.css" %}" />
     <!--[if lt IE 8]>
@@ -24,7 +25,7 @@
     {% block link %}{% endblock link %}
     {% block script %}{% endblock script %}
   </head>
-  <body class="zinnia {% block theme-class %}default{% endblock theme-class %} {% block color-class %}grey{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}">
+  <body class="zinnia {% block theme-class %}default{% endblock theme-class %} {% block color-class %}default{% endblock color-class %} {% block sidebar-class %}right-sidebar{% endblock sidebar-class %} {% block body-class %}{% endblock body-class %}">
     <div class="container">
       <div id="header">
         <ul class="top-navigation">

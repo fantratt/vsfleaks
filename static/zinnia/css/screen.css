@@ -34,7 +34,6 @@ table {
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 75%;
-  color-profile: sRGB;
   rendering-intent: auto; }
   .zinnia h1, .zinnia h2, .zinnia h3, .zinnia h4, .zinnia h5, .zinnia h6 {
     font-weight: normal; }
@@ -241,6 +240,7 @@ table {
   @media (min-width: 1024px) {
     .zinnia #header h1 {
       background: transparent url("../img/logo.png") no-repeat scroll left center;
+	  background-size: 62px 62px;
       padding-left: 1.5em; }
     .zinnia #header blockquote {
       margin-left: 6em; } }
@@ -504,20 +504,20 @@ table {
   .zinnia [class*='entries-calendar'] .entry {
     font-weight: bold; }
 .zinnia.default {
-  color: darkgray;
+  color: black; 
   background-color: lightgray;
-  .zinnia.default h1, .zinnia.default h2, .zinnia.default h3, .zinnia.default h4, .zinnia.default h5, .zinnia.default h6 {
-    color: gray; }
-  .zinnia.default a {
-    color: darkgrey; }
-    .zinnia.default a:visited {
-      color: darkgrey; }
+	.zinnia.default h1, .zinnia.default h2, .zinnia.default h3, .zinnia.default h4, .zinnia.default h5, .zinnia.default h6 {
+    color: black; }
+	.zinnia.default a {
+    color: black; !important }
+	.zinnia.default a:visited {
+      color: black; !important }
     .zinnia.default a:focus {
-      color: darkgrey; }
+      color: black; !important }
     .zinnia.default a:hover {
-      color: lightgrey; }
+      color: lightgrey; !important }
     .zinnia.default a:active {
-      color: lightgrey; }
+      color: lightgrey; !important }
   .zinnia.default blockquote, .zinnia.default pre {
     background-color: #eee;
     color: lightgrey; }
@@ -532,13 +532,13 @@ table {
     border-bottom: 1px solid #ddd;
     text-shadow: 1px 1px 0 #ddd; }
   .zinnia.default .entry-info {
-    color: darkgrey; }
+    color: black; }
   .zinnia.default .entry-content {
     color: lightgrey; }
   .zinnia.default .entry-body img {
     border: 1px solid #ddd; }
   .zinnia.default .entry-footer strong {
-    color: darkgrey; }
+    color: black; }
   .zinnia.default .entry-widgets, .zinnia.default #comments, .zinnia.default #pingbacks, .zinnia.default #trackbacks, .zinnia.default #footer {
     border-top: 1px solid #ddd; }
   .zinnia.default li.comment, .zinnia.default li.pingback, .zinnia.default li.trackback {
@@ -552,13 +552,13 @@ table {
     .zinnia.default #header h1 {
       text-shadow: 2px 2px 2px #ccc; }
     .zinnia.default #header blockquote {
-      color: darkgrey; }
+      color: black; }
   .zinnia.default fieldset {
     border: 1px solid #ddd; }
   .zinnia.default legend, .zinnia.default caption {
-    color: darkgrey; }
+    color: black; }
   .zinnia.default input[type=url], .zinnia.default input[type=email], .zinnia.default input[type=text], .zinnia.default input[type=password], .zinnia.default textarea {
-    color: darkgrey;
+    color: black;
     background-color: #eee;
     border: 1px solid #ddd; }
     .zinnia.default input[type=url]:focus, .zinnia.default input[type=email]:focus, .zinnia.default input[type=text]:focus, .zinnia.default input[type=password]:focus, .zinnia.default textarea:focus {
@@ -573,7 +573,7 @@ table {
   .zinnia.default #sidebar h3 {
     background-color: #eee; }
   .zinnia.default [class*='entries-calendar'] th, .zinnia.default [class*='entries-calendar'] tfoot td {
-    color: darkgrey;
+    color: black;
     background: none repeat scroll 0 0 #eee;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd; }

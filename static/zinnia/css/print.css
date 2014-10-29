@@ -4,9 +4,6 @@
   color: black;
   background: none;
   font-size: 10pt; }
-  .zinnia a, .zinnia a:link, .zinnia a:visited, .zinnia a:focus, .zinnia a:active, .zinnia a:hover {
-    text-decoration: none;
-    color: dodgerblue; }
 
 #sidebar, .top-navigation, .comment-form {
   display: none; }
